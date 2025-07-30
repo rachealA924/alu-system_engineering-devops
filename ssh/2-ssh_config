@@ -1,6 +1,6 @@
-# Your SSH client configuration must be configured to use the private key `~/.ssh/school`
-# Your SSH client configuration must be configured to refuse to authenticate using a password
-
-Host *
-     PasswordAuthentication no
-     IdentifyFile ~/.ssh/school
+Host schoolserver
+    HostName 8.8.8.8
+    User ubuntu
+    IdentityFile ~/.ssh/school
+    IdentitiesOnly yes
+    PasswordAuthentication no
